@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Anze Fajfar</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Anže Fajfar</h1>
+        <canvas id='canv'></canvas>
+    </div>
+    <div id="about">
+        <div class="content-about">
+            <h1>About me</h1>
+            <p>
+                My name is Anze. I am a self taught programmer, currently working in front-end with the end goal of becoming a full stack developer. <br>
+                I like programming, music and windows. But not the OS ones.
+            </p>
+			<h2>My skills:</h2>
+			<p>Stats taken from <a href="https://codestats.net/users/fajfara">Codestats</a></p>
+			<div class="chart">
+				<canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="portfolio">
+        <div class="content-portfolio">
+            <h1>Portfolio</h1>
+            <div id="gallery">
+                <div class="gallery-item item-1">
+                    <div class="title-left">
+                        <span class="item-title">Random Quote Machine</span><br>
+                        <span class="item-subtitle"><a href="#">Click to learn more</a></span>
+                    </div>
+                    <div data-tilt>
+                        <img src="images/portfolio-1.png" alt="portfolio item number one">
+                    </div>
+                </div>
+
+                <div class="gallery-item item-2">
+                    
+                </div>
+
+                <div class="gallery-item item-3">
+                    
+                </div>
+
+                <div class="gallery-item item-4">
+                    <div class="title-right">
+                        <span class="item-title">Weather App</span><br>
+                        <span class="item-subtitle"><a href="#">Click to learn more</a></span>
+                    </div>
+                    <div data-tilt>
+                        <img src="images/portfolio-2.png" alt="portfolio item number one">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="js/chart-draw.js"></script>
+    <script src="js/background-header.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

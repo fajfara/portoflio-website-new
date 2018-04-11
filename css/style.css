@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono:400,700');
+
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #EF233C;
+  box-sizing: border-box;
+}
+/* Styling the header page */
+#canv {
+    width: 100%;
+    height: 100vh;
+    cursor: url('../images/black-cursor.png'), auto;
+    font-weight: 700;
+}
+
+#header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    font-family: 'Roboto Mono', monospace;
+    color: #EDF2F4;
+    background: #2B2D42;
+    padding: 30px;
+}
+
+/* Styling the about part */
+
+#about {
+    height: 120vh;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+}
+
+#about h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.content-about {
+    position: relative;
+    top: 10%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.chart {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Styling the portfolio part */
+#portfolio {
+    height: 150vh;
+    background: #D90429;
+    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png'), linear-gradient(180deg, rgba(217, 4, 41, 1), rgba(237, 242, 244, 0.8), rgba(141, 153, 174, 0.7),rgba(43, 45, 66, 0.6));
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    text-align: center;
+}
+#portfolio img {
+    width: 100%;
+}
+
+#portfolio h1{
+    position: relative;
+    top: 20px;
+    color: #FDFFFC;
+    font-family: 'Roboto Mono', monospace;
+    background: #2B2D42;
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#gallery {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*
+.gallery-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+*/
+
+
+.title-left {
+    line-height: 250%;
+    position: relative;
+    top: 230px;
+    left: 40px;
+    z-index: 101;
+}
+
+.item-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    background: #EF233C;
+    color: #2B2D42;
+    padding: 7px;
+    z-index: 100;
+}
+
+.item-subtitle{
+    position: relative;
+    left: 30%;
+    padding: 10px;
+    background: #2B2D42;
+    color: #FDFFFC;
+    font-family: 'Open sans', sans-serif;
+}
+
+.item-subtitle a{
+    text-decoration: none;
+    color: #FDFFFC;
+}
+
+.item-subtitle:hover{
+    background: #8D99AE;
+}
+
+.title-right {
+    line-height: 250%;
+    position: relative;
+    top: 50%;
+    right: 9%;
+    z-index: 101;
+
+}
+
+.title-right .item-subtitle {
+    left: -30%;
+}
+
+.item-4 .item-title {
+    position: relative;
+    left: -18%;
+}
