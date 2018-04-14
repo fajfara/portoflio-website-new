@@ -1,144 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono:400,700');
-
-
-body {
-  width: 100%;
-  margin: 0;
-  background: #EF233C;
-  box-sizing: border-box;
-}
-/* Styling the header page */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono:400,700");
+/* Styling the landing top animation*/
 #canv {
-    width: 100%;
-    height: 100vh;
-    cursor: url('../images/black-cursor.png'), auto;
-    font-weight: 700;
-}
+  width: 100%;
+  height: 100vh;
+  cursor: url("../images/black-cursor.png"), auto;
+  font-weight: 700; }
 
-#header h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5em;
-    font-family: 'Roboto Mono', monospace;
-    color: #EDF2F4;
-    background: #2B2D42;
-    padding: 30px;
-}
+#header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5em;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  background: #00171F;
+  padding: 3rem; }
 
 /* Styling the about part */
-
 #about {
-    height: 120vh;
-    background-color: #2B2D42;
-    color: #EDF2F4;
-    text-align: center;
-    font-family: 'Open sans', sans-serif;
-}
-
-#about h1, h2 {
-    font-family: 'Roboto Mono', monospace;
-}
+  height: 120vh;
+  background-color: #00171F;
+  color: #fff;
+  text-align: center;
+  font-family: 'Open sans', sans-serif; }
+  #about h1, #about h2 {
+    font-family: 'Roboto Mono', monospace; }
 
 .content-about {
-    position: relative;
-    top: 10%;
-    max-width: 960px;
-    margin: 0 auto;
-}
+  position: relative;
+  top: 10%;
+  max-width: 960px;
+  margin: 0 auto; }
+
 .chart {
-    width: 100%;
-    margin: 0 auto;
-}
+  width: 100%;
+  margin: 0 auto; }
 
 /* Styling the portfolio part */
 #portfolio {
-    height: 150vh;
-    background: #D90429;
-    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png'), linear-gradient(180deg, rgba(217, 4, 41, 1), rgba(237, 242, 244, 0.8), rgba(141, 153, 174, 0.7),rgba(43, 45, 66, 0.6));
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    text-align: center;
-}
-#portfolio img {
-    width: 100%;
-}
-
-#portfolio h1{
+  height: 150vh;
+  background: #003459;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-attachment: fixed;
+  text-align: center; }
+  #portfolio img {
+    width: 100%; }
+  #portfolio h1 {
     position: relative;
     top: 20px;
-    color: #FDFFFC;
+    color: #fff;
     font-family: 'Roboto Mono', monospace;
-    background: #2B2D42;
+    background: #007EA7;
     width: 30%;
     padding: 10px;
-    margin: 0 auto;
-}
+    margin: 0 auto; }
 
 #gallery {
-    max-width: 960px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%; }
 
 /*
 .gallery-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
 */
-
-
 .title-left {
-    line-height: 250%;
-    position: relative;
-    top: 230px;
-    left: 40px;
-    z-index: 101;
-}
+  line-height: 250%;
+  position: relative;
+  top: 230px;
+  left: 40px;
+  z-index: 101; }
 
 .item-title {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-    background: #EF233C;
-    color: #2B2D42;
-    padding: 7px;
-    z-index: 100;
-}
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
+  background: #00A8E8;
+  color: #00171F;
+  padding: 7px;
+  z-index: 100; }
 
-.item-subtitle{
-    position: relative;
-    left: 30%;
-    padding: 10px;
-    background: #2B2D42;
-    color: #FDFFFC;
-    font-family: 'Open sans', sans-serif;
-}
-
-.item-subtitle a{
+.item-subtitle {
+  position: relative;
+  left: 30%;
+  padding: 10px;
+  background: #00171F;
+  color: #fff;
+  font-family: 'Open sans', sans-serif; }
+  .item-subtitle a {
     text-decoration: none;
-    color: #FDFFFC;
-}
+    color: #fff; }
 
-.item-subtitle:hover{
-    background: #8D99AE;
-}
+.item-subtitle:hover {
+  background: #8D99AE; }
 
 .title-right {
-    line-height: 250%;
-    position: relative;
-    top: 50%;
-    right: 9%;
-    z-index: 101;
-
-}
+  line-height: 250%;
+  position: relative;
+  top: 50%;
+  right: 9%;
+  z-index: 101; }
 
 .title-right .item-subtitle {
-    left: -30%;
-}
+  left: -30%; }
 
 .item-4 .item-title {
-    position: relative;
-    left: -18%;
-}
+  position: relative;
+  left: -18%; }
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #003459;
+  box-sizing: border-box; }

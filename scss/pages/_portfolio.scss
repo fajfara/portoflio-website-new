@@ -1,0 +1,94 @@
+/* Styling the portfolio part */
+#portfolio {
+    height: 150vh;
+    background: $prussian-blue;
+    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+    background-attachment: fixed;
+    text-align: center;
+
+    & img {
+        width: 100%;
+    }
+
+    & h1{
+        position: relative;
+        top: 20px;
+        color: $white;
+        font-family: 'Roboto Mono', monospace;
+        background: $cerulean;
+        width: 30%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    
+}
+#gallery {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*
+.gallery-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+*/
+
+
+.title-left {
+    line-height: 250%;
+    position: relative;
+    top: 230px;
+    left: 40px;
+    z-index: 101;
+}
+
+.item {
+    &-title {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 2em;
+        background: $vivid-cerulean;
+        color: $rich-black;
+        padding: 7px;
+        z-index: 100;
+    }
+
+    &-subtitle{
+        position: relative;
+        left: 30%;
+        padding: 10px;
+        background: $rich-black;
+        color: $white;
+        font-family: 'Open sans', sans-serif;
+    
+        & a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
+    &-subtitle:hover{
+        background: #8D99AE;
+    }
+    
+}
+.title {
+    &-right {
+        line-height: 250%;
+        position: relative;
+        top: 50%;
+        right: 9%;
+        z-index: 101;
+    
+    }
+}
+
+.title-right .item-subtitle {
+    left: -30%;
+}
+
+.item-4 .item-title {
+    position: relative;
+    left: -18%;
+}

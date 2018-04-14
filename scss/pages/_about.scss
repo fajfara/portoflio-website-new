@@ -1,0 +1,24 @@
+/* Styling the about part */
+
+#about {
+    height: 120vh;
+    background-color: $rich-black;
+    color: $white;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+
+    & h1, h2 {
+        font-family: 'Roboto Mono', monospace;
+    }
+}
+
+.content-about {
+    position: relative;
+    top: 10%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.chart {
+    width: 100%;
+    margin: 0 auto;
+}

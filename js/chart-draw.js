@@ -11,7 +11,7 @@ $(document).ready(function(){
         xpsCSS = data.languages.CSS.xps;
         JS = data.languages.JavaScript.xps;
         Python = data.languages.Python.xps;
-        Chart.defaults.global.defaultFontColor = '#FDFFFC';
+        Chart.defaults.global.defaultFontColor = '#fff';
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {

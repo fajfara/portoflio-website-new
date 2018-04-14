@@ -45,7 +45,7 @@ $(document).ready(function(){
   }
 
   function draw() {
-  $.fillStyle = '#EF233C';
+  $.fillStyle = '#003459';
   $.fillRect(0, 0, c.width, c.height);
     txt();
     dst.ref();
@@ -78,7 +78,7 @@ $(document).ready(function(){
   }
 
   function conn(p1, p2) {
-    $.strokeStyle = '#2B2D42';
+    $.strokeStyle = '#fff';
     var dist = _dist(p1, p2);
     $.globalAlpha = 1 - dist / 100;
     $.beginPath();

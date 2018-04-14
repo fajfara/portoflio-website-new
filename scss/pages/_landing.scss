@@ -1,0 +1,19 @@
+/* Styling the landing top animation*/
+#canv {
+    width: 100%;
+    height: 100vh;
+    cursor: url('../images/black-cursor.png'), auto;
+    font-weight: 700;
+}
+
+#header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    font-family: 'Roboto Mono', monospace;
+    color: $white;
+    background: $rich-black;
+    padding: 3rem;
+}
