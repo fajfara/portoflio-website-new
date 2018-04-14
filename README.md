@@ -6,4 +6,6 @@ DAY 13.04.2018
 
 > Adding the readme file to the repository also fixed email issue which i had, the problem was any commit i did to any of my projects didn't count in my stats. Adding some more place holder images later on for portfolio. Probably working on it more tommorrow. 
 
+DAY 14.04.2018
+
 > Just converted everything to scsss, i like it a lot more then just plain css. Added a new color pallet, still not decided on that yet. Also minor JS bug fixes.
