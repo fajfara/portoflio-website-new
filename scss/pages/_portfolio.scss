@@ -1,6 +1,6 @@
 /* Styling the portfolio part */
 #portfolio {
-    height: 150vh;
+    height: 100%;
     background: $prussian-blue;
     background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
     background-attachment: fixed;
@@ -36,14 +36,15 @@
 */
 
 
+
 .title-left {
     line-height: 250%;
     position: relative;
-    top: 230px;
-    left: 40px;
+    top: 84%;
     z-index: 101;
 }
 
+// styling for left title and subtitle + positioning
 .item {
     &-title {
         font-family: 'Roboto Mono', monospace;
@@ -73,12 +74,14 @@
     }
     
 }
+
+// The right title and subtitle styling and positioning
 .title {
     &-right {
         line-height: 250%;
         position: relative;
-        top: 50%;
-        right: 9%;
+        top: 30%;
+        right: -4%;
         z-index: 101;
     
     }
@@ -91,4 +94,20 @@
 .item-4 .item-title {
     position: relative;
     left: -18%;
+}
+
+.item-5 {
+    & .title-left {
+        top: 50%;
+        left: 23%;
+    }
+
+    & .item-subtitle {
+        left: 15%;
+    }
+
+    & img {
+        position: relative;
+        top: .2rem;
+    }
 }

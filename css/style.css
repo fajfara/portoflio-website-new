@@ -15,17 +15,35 @@
   font-family: 'Roboto Mono', monospace;
   color: #fff;
   background: #00171F;
-  padding: 3rem; }
+  padding: 3rem;
+  cursor: default; }
+
+#header h1:hover {
+  background: #fff;
+  color: #00171F; }
 
 /* Styling the about part */
 #about {
-  height: 120vh;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #00171F;
   color: #fff;
   text-align: center;
   font-family: 'Open sans', sans-serif; }
   #about h1, #about h2 {
     font-family: 'Roboto Mono', monospace; }
+  #about .github-link {
+    margin-top: 20px; }
+  #about a:link {
+    padding: 2px;
+    text-decoration: none;
+    color: #00A8E8; }
+  #about a:hover {
+    background: #fff;
+    color: #00171F !important; }
+  #about a:visited {
+    color: #00A8E8; }
 
 .content-about {
   position: relative;
@@ -39,7 +57,7 @@
 
 /* Styling the portfolio part */
 #portfolio {
-  height: 150vh;
+  height: 100%;
   background: #003459;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   background-attachment: fixed;
@@ -70,8 +88,7 @@
 .title-left {
   line-height: 250%;
   position: relative;
-  top: 230px;
-  left: 40px;
+  top: 84%;
   z-index: 101; }
 
 .item-title {
@@ -99,8 +116,8 @@
 .title-right {
   line-height: 250%;
   position: relative;
-  top: 50%;
-  right: 9%;
+  top: 30%;
+  right: -4%;
   z-index: 101; }
 
 .title-right .item-subtitle {
@@ -109,6 +126,60 @@
 .item-4 .item-title {
   position: relative;
   left: -18%; }
+
+.item-5 .title-left {
+  top: 50%;
+  left: 23%; }
+
+.item-5 .item-subtitle {
+  left: 15%; }
+
+.item-5 img {
+  position: relative;
+  top: .2rem; }
+
+.contacts {
+  height: 100%;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Roboto Mono', monospace;
+  background: #00171F; }
+  .contacts .details {
+    max-width: 960px;
+    background: #007EA7;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 7rem; }
+    .contacts .details .email-tel {
+      padding: 1rem;
+      line-height: 2rem;
+      text-align: left;
+      background: #003459;
+      width: 40%;
+      margin: 0 auto;
+      font-size: 1rem; }
+    .contacts .details h2 {
+      margin-top: 20px; }
+    .contacts .details .social {
+      background: #003459;
+      margin: 0 auto;
+      width: 40%; }
+      .contacts .details .social a {
+        color: #fff; }
+    .contacts .details img {
+      width: 20%;
+      top: 11.5%;
+      right: 7%;
+      position: absolute; }
+
+.resources {
+  height: 100vh;
+  background: white; }
+  .resources .res-text {
+    width: 100%; }
 
 body {
   width: 100%;

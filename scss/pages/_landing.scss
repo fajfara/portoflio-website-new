@@ -6,14 +6,23 @@
     font-weight: 700;
 }
 
-#header h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5em;
-    font-family: 'Roboto Mono', monospace;
-    color: $white;
-    background: $rich-black;
-    padding: 3rem;
+#header {
+    
+    & h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5em;
+        font-family: 'Roboto Mono', monospace;
+        color: $white;
+        background: $rich-black;
+        padding: 3rem;
+        cursor: default;
+    }
+
+    & h1:hover {
+        background: $white;
+        color: $rich-black;
+    }
 }
