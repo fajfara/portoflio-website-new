@@ -30,7 +30,8 @@
   background-color: #00171F;
   color: #fff;
   text-align: center;
-  font-family: 'Open sans', sans-serif; }
+  font-family: 'Open sans', sans-serif;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%); }
   #about h1, #about h2 {
     font-family: 'Roboto Mono', monospace; }
   #about .github-link {
@@ -49,7 +50,9 @@
   position: relative;
   top: 10%;
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 4%;
+  padding-top: 5%; }
 
 .chart {
   width: 100%;
@@ -61,9 +64,15 @@
   background: #003459;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  padding-bottom: 4rem; }
   #portfolio img {
-    width: 100%; }
+    width: 100%;
+    transition: ease-in .2s; }
+    #portfolio img:hover {
+      transform: scale(1.1); }
   #portfolio h1 {
     position: relative;
     top: 20px;
@@ -78,19 +87,14 @@
   max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 50% 50%;
+  margin-top: -5%; }
 
 /*
 .gallery-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
 */
-.title-left {
-  line-height: 250%;
-  position: relative;
-  top: 84%;
-  z-index: 101; }
-
 .item-title {
   font-family: 'Roboto Mono', monospace;
   font-size: 2em;
@@ -113,10 +117,16 @@
 .item-subtitle:hover {
   background: #8D99AE; }
 
+.title-left {
+  line-height: 250%;
+  position: relative;
+  top: 70%;
+  z-index: 101; }
+
 .title-right {
   line-height: 250%;
   position: relative;
-  top: 30%;
+  top: 70%;
   right: -4%;
   z-index: 101; }
 
@@ -126,10 +136,6 @@
 .item-4 .item-title {
   position: relative;
   left: -18%; }
-
-.item-5 .title-left {
-  top: 50%;
-  left: 23%; }
 
 .item-5 .item-subtitle {
   left: 15%; }
@@ -144,7 +150,11 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: 'Roboto Mono', monospace;
-  background: #00171F; }
+  background: #00171F;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  padding-top: 7rem;
+  margin-top: -7%; }
   .contacts .details {
     max-width: 960px;
     background: #007EA7;

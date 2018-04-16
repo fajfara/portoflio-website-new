@@ -5,10 +5,19 @@
     background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
     background-attachment: fixed;
     text-align: center;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+    padding-bottom: 4rem;
+    
 
     & img {
         width: 100%;
+        transition: ease-in .2s;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
+
 
     & h1{
         position: relative;
@@ -27,7 +36,9 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: -5%;
 }
+
 
 /*
 .gallery-item {
@@ -36,15 +47,7 @@
 */
 
 
-
-.title-left {
-    line-height: 250%;
-    position: relative;
-    top: 84%;
-    z-index: 101;
-}
-
-// styling for left title and subtitle + positioning
+// styling for both positions
 .item {
     &-title {
         font-family: 'Roboto Mono', monospace;
@@ -74,13 +77,20 @@
     }
     
 }
+// left title position 
+.title-left {
+    line-height: 250%;
+    position: relative;
+    top: 70%;
+    z-index: 101;
+}
 
 // The right title and subtitle styling and positioning
 .title {
     &-right {
         line-height: 250%;
         position: relative;
-        top: 30%;
+        top: 70%;
         right: -4%;
         z-index: 101;
     
@@ -91,17 +101,14 @@
     left: -30%;
 }
 
+// Fixing any issues with the titles
+
 .item-4 .item-title {
     position: relative;
     left: -18%;
 }
 
 .item-5 {
-    & .title-left {
-        top: 50%;
-        left: 23%;
-    }
-
     & .item-subtitle {
         left: 15%;
     }

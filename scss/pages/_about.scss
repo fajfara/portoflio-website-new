@@ -8,6 +8,7 @@
     color: $white;
     text-align: center;
     font-family: 'Open sans', sans-serif;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 
     & h1, h2 {
         font-family: 'Roboto Mono', monospace;
@@ -38,6 +39,8 @@
     top: 10%;
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 4%;
+    padding-top: 5%;
 }
 .chart {
     width: 100%;

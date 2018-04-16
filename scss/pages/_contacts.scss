@@ -5,6 +5,10 @@
     padding-bottom: 2rem;
     font-family: 'Roboto Mono', monospace;
     background: $rich-black;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    padding-top: 7rem;
+    margin-top: -7%;
 
     & .details {
         max-width: 960px;
