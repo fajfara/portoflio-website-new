@@ -1,36 +1,47 @@
 /* Styling the about part */
 
 #about {
-    height: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: $rich-black;
-    color: $white;
+    height: 170vh;
+    padding-bottom: 8rem;
+    background-color: $black;
+    color: $main-font-color;
     text-align: center;
     font-family: 'Open sans', sans-serif;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    z-index: 1000;
+    margin-top: -10rem;
+    z-index: -100;
 
-    & h1, h2 {
+    & h1 {
         font-family: 'Roboto Mono', monospace;
+        color: $white;
+        font-size: 3rem;
+        display: inline-block;
     }
 
     & .github-link {
         margin-top: 20px;
+        font-size: 1.5rem;
     }
 
-    & a:link {
+    & a:link,
+    & a:visited {
+        color: $main-color-secondary-2;
         padding: 2px;
         text-decoration: none;
-        color: $vivid-cerulean;
+        color: $main-color-secondary-2;
+        text-transform: uppercase;
+        transition: all .3s;
     }
 
     & a:hover {
-        background: $white;
-        color: $rich-black !important;
+        box-shadow: 0 1rem 2rem rgba($black, .4); 
+        transform: rotate(5deg);
     }
 
-    & a:visited {
-        color: $vivid-cerulean;
+    & p {
+        font-size: 1.3rem;
+        padding: 1rem;
     }
 }
 

@@ -1,16 +1,13 @@
 /* Styling the portfolio part */
 #portfolio {
     height: 100%;
-    background: $prussian-blue;
-    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
-    background-attachment: fixed;
     text-align: center;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
-    padding-bottom: 4rem;
-    
+    padding: 5rem 5rem 10rem 5rem;
 
-    & img {
+}
+    /*& img {
         width: 100%;
         transition: ease-in .2s;
         &:hover {
@@ -30,6 +27,7 @@
         margin: 0 auto;
     }
     
+    
 }
 #gallery {
     max-width: 960px;
@@ -40,11 +38,11 @@
 }
 
 
-/*
+
 .gallery-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
-*/
+
 
 
 // styling for both positions
@@ -118,3 +116,4 @@
         top: .2rem;
     }
 }
+*/

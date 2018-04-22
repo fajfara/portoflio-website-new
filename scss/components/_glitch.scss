@@ -1,0 +1,50 @@
+.focus {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  font-family: futura, sans-serif;
+  font-size: 8em;
+  color: transparent;
+  text-align: center;
+  letter-spacing: .5em;
+  transition: letter-spacing 2s ease;
+}
+.focus .letter {
+  transition: text-shadow 2s ease;
+}
+.focus .letter:nth-of-type(1), .focus .letter:nth-of-type(5) {
+  text-shadow: 0 0 2px white, 0 0 1px rgba(255, 215, 0, 0.75), 0.03em 0 0.06em rgba(255, 0, 0, 0.9), -0.03em 0 0.06em rgba(0, 255, 255, 0.9);
+}
+.focus .letter:nth-of-type(2), .focus .letter:nth-of-type(4) {
+  text-shadow: 0 0 2px white, 0 0 1px rgba(255, 215, 0, 0.75), 0.018em 0 0.036em rgba(255, 0, 0, 0.9), -0.018em 0 0.036em rgba(0, 255, 255, 0.9);
+}
+.focus .letter:nth-of-type(3) {
+  text-shadow: 0 0 2px white, 0 0 1px rgba(255, 215, 0, 0.75), 0.018em 0 0.036em rgba(255, 0, 0, 0.9), -0.018em 0 0.036em rgba(0, 255, 255, 0.9);
+}
+body:hover .focus {
+  letter-spacing: .55em;
+}
+body:hover .focus .letter:nth-of-type(1), body:hover .focus .letter:nth-of-type(5) {
+  text-shadow: 0 0 4px white, 0 0 1px rgba(255, 215, 0, 0.75), 0.042em 0 0.084em rgba(255, 0, 0, 0.9), -0.042em 0 0.084em rgba(0, 255, 255, 0.9);
+}
+body:hover .focus .letter:nth-of-type(2), body:hover .focus .letter:nth-of-type(4) {
+  text-shadow: 0 0 2px white, 0 0 1px rgba(255, 215, 0, 0.75), 0.024em 0 0.066em rgba(255, 0, 0, 0.9), -0.024em 0 0.066em rgba(0, 255, 255, 0.9);
+}
+body:hover .focus .letter:nth-of-type(3) {
+  text-shadow: 0 0 2px white, 0 0 1px rgba(255, 215, 0, 0.75), 0.024em 0 0.066em rgba(255, 0, 0, 0.9), -0.024em 0 0.066em rgba(0, 255, 255, 0.9);
+}
+body:hover .bg-img-blur {
+  opacity: 1;
+}
+
+.img-vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 4em black;
+}

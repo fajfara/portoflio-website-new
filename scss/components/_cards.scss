@@ -1,0 +1,66 @@
+.card {
+    perspective: 180rem;
+    -moz-perspective: 180rem;
+    position: relative;
+    height: 20rem;
+
+    &__side {
+        height: 20rem;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+
+        & img {
+            width: 100%;
+        }
+
+        &--back {
+            transform: rotateX(180deg);
+            background-color: $black;
+
+            &-1 {
+                &-content {
+                    margin: 0 auto;
+                    margin-top: 3rem;
+                    width: 75%;
+                    height: 75%;
+                    
+                    
+                    // Button styling
+                    
+                    // End of button styling
+
+
+                    & .text {
+                        margin-top: 2rem;
+                        color: $main-font-color;
+                    }
+
+                    & h1 {
+                        font-family: $main-title-font;
+                        
+                    }
+
+                    & p {
+                        font-family: $content-font;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateX(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateX(0);
+    }
+}

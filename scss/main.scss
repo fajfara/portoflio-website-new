@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono:400,700');
 
 @import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/grid";
+
+@import "components/cards";
+@import "components/buttons";
+@import "components/neon";
+@import "components/glitch";
+@import "components/mainText";
 
 @import "pages/landing";
 @import "pages/about";
@@ -10,11 +18,14 @@
 
 
 
+
 body {
   width: 100%;
   margin: 0;
-  background: $prussian-blue;
-  box-sizing: border-box;
+  background: $main-color-primary;
+  background-image: url('../images/portfolio-back.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
