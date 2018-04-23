@@ -9,6 +9,7 @@
 @import "components/neon";
 @import "components/glitch";
 @import "components/mainText";
+@import "components/navigation";
 
 @import "pages/landing";
 @import "pages/about";
@@ -23,7 +24,7 @@ body {
   width: 100%;
   margin: 0;
   background: $main-color-primary;
-  background-image: url('../images/portfolio-back.png');
+  background-image: url('../images/portfolio-back.jpg');
   background-size: cover;
   background-attachment: fixed;
 }

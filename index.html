@@ -10,6 +10,25 @@
     <title>Anze Fajfar</title>
 </head>
 <body>
+    <!-- Navigation -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Natours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
     <div id="header">
             <!--<svg viewBox="0 0 960 300">
                     <symbol id="s-text">
@@ -35,19 +54,23 @@
             <div class="neon2-on">
                 <h1>About me</h1>
             </div>
-            <p>
+            <p class="text-effect-chromo ">
                 My name is Anze. I am a self taught programmer, currently working in front-end with the end goal of becoming a full stack developer.
                 I like programming, music and windows. But not the OS ones.
             </p>
             <div class="neon2-on">
                 <h1>My skills:</h1>
             </div>
-			<p>Stats taken from <a href="https://codestats.net/users/fajfara">Codestats</a></p>
+            <div class="codestats-link">
+                <p class="text-effect-chromo">Stats taken from: </p>
+                <a href="https://codestats.net/users/fajfara">Codestats</a>
+            </div>
+			
 			<div class="chart">
 				<canvas id="myChart"></canvas>
             </div>
             <div class="github-link">
-                <span>Link to my Github profile: </span>
+                <span class="text-effect-chromo">Link to my Github profile: </span>
                 <a href="https://github.com/fajfara">Github</a>
             </div>
         </div>
@@ -59,7 +82,7 @@
             <div class="col-1-of-3">
                 <div class="card">
                         <div class="card__side card__side--front">
-                            <img src="images/RQM-bg.png" alt="Random quote generator image">
+                            <img src="images/RQM-bg.jpg" alt="Random quote generator image">
                         </div>
 
                         <div class="card__side card__side--back card__side--back-1">

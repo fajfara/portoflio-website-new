@@ -1,10 +1,29 @@
 /* Styling the about part */
 
 #about {
-    height: 170vh;
-    padding-bottom: 8rem;
-    background-color: $black;
-    color: $main-font-color;
+    height: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    // background
+    background:#000;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    
+    background: linear-gradient(
+        to bottom,
+        #000,
+        #000 50%,
+        #222 50%,
+        #222
+    );
+    background-size: 100% 4px;
+
+
+    // end of background code
+
+    color: $white;
     text-align: center;
     font-family: 'Open sans', sans-serif;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
@@ -19,29 +38,45 @@
         display: inline-block;
     }
 
+    & .codestats-link {
+        margin: 0 auto;
+        display: inline-block;
+        & p {
+            margin: .5rem;
+        }
+
+        & a {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    }
+
     & .github-link {
-        margin-top: 20px;
+        margin-top: 3rem;
         font-size: 1.5rem;
+
+        & a{
+            display: inline-block;
+        }
     }
 
     & a:link,
     & a:visited {
-        color: $main-color-secondary-2;
         padding: 2px;
+        background: $black;
         text-decoration: none;
         color: $main-color-secondary-2;
-        text-transform: uppercase;
+        display: inline-block;
         transition: all .3s;
     }
 
     & a:hover {
         box-shadow: 0 1rem 2rem rgba($black, .4); 
-        transform: rotate(5deg);
+        transform: rotate(-5deg) scale(1.5);
     }
 
     & p {
         font-size: 1.3rem;
-        padding: 1rem;
     }
 }
 
@@ -56,4 +91,15 @@
 .chart {
     width: 100%;
     margin: 0 auto;
+}
+
+.text-effect-chromo {
+    text-shadow: 3px 2px 2px rgba(251, 12, 12,.7), 0px -1px 3px rgba(12, 79, 251,.5),-3px 0px 2px rgba($vhs-effect-green, .7);
+    animation: chromaticMove 4500ms ease infinite;
+}
+
+@keyframes chromaticMove { 
+    0%{text-shadow: 3px 2px 2px rgba(251, 12, 12,.7), 0px -1px 3px rgba(12, 79, 251,.5),0px 0px -2px rgba($vhs-effect-green, .7);}
+    50%{text-shadow: 3px 2px 2px rgba(251, 12, 12,.7), 0px -1px 3px rgba(12, 79, 251,.5),-3px 2px 3px rgba($vhs-effect-green, .7);}
+    100%{text-shadow: 3px 2px 2px rgba(251, 12, 12,.7), 0px -1px 3px rgba(12, 79, 251,.5),2px -1px 2px rgba($vhs-effect-green, .7);}
 }
