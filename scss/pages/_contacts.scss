@@ -4,19 +4,22 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-family: 'Roboto Mono', monospace;
-    background: $black;
+    background-color: #092123;
+    background-image: url("../images/foggy-birds.png");
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
     padding-top: 7rem;
+    padding-bottom: 7rem;
     margin-top: -7%;
 
     & .details {
         max-width: 960px;
-        background: $main-color-primary-2;
+        background: $black;
         margin: 0 auto;
         text-align: center;
         font-size: 1.5rem; 
         position: relative;
+        padding-top: 2rem;
         padding-bottom: 7rem;
 
         & .email-tel {
@@ -24,9 +27,11 @@
             line-height: 2rem;
             text-align: left;
             background: $main-color-primary;
+            color: $vhs-effect-green;
             width: 40%;
             margin: 0 auto;
             font-size: 1rem;
+            margin-bottom: 1rem;
         }
 
         & h2 {
@@ -39,13 +44,19 @@
             width: 40%;
 
             & a {
-                color: $white;
+                color: $vhs-effect-green;
+
+                &:hover {
+                    color: $white;
+                }
             }
+
+            
         }
 
         & img {
             width: 20%;
-            top: 11.5%;
+            top: 11%;
             right: 7%;
             position: absolute;
         }

@@ -239,7 +239,7 @@ p h1:hover {
 
 .neon2-on h1 {
   font-size: 1.5em;
-  color: #cb215b;
+  color: #f7ffff;
   font-family: 'Roboto Mono', monospace;
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
@@ -500,7 +500,7 @@ svg {
   display: none; }
 
 .navigation__button {
-  background-color: #f7ffff;
+  background-color: #051113;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
@@ -508,7 +508,7 @@ svg {
   top: 6rem;
   right: 6rem;
   z-index: 16000;
-  box-shadow: 0 1rem 3rem rgba(5, 17, 19, 0.1);
+  box-shadow: 0.15rem 0.2rem 0.3rem rgba(203, 33, 91, 0.5);
   text-align: center;
   cursor: pointer; }
 
@@ -519,7 +519,7 @@ svg {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(green, white);
+  background-image: radial-gradient(#051113, #123f44);
   z-index: 10000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -540,7 +540,8 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  font-family: "Roboto Mono", monospace; }
 
 .navigation__item {
   margin: 1rem; }
@@ -579,7 +580,7 @@ svg {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 1.7rem;
     height: 2px;
-    background-color: grey;
+    background-color: #cb215b;
     display: inline-block;
     transition: all .2s; }
   .navigation__icon::before, .navigation__icon::after {
@@ -826,27 +827,32 @@ svg {
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: 'Roboto Mono', monospace;
-  background: #051113;
+  background-color: #092123;
+  background-image: url("../images/foggy-birds.png");
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   padding-top: 7rem;
+  padding-bottom: 7rem;
   margin-top: -7%; }
   .contacts .details {
     max-width: 960px;
-    background: #2B1A3C;
+    background: #051113;
     margin: 0 auto;
     text-align: center;
     font-size: 1.5rem;
     position: relative;
+    padding-top: 2rem;
     padding-bottom: 7rem; }
     .contacts .details .email-tel {
       padding: 1rem;
       line-height: 2rem;
       text-align: left;
       background: #123f44;
+      color: #58fcc3;
       width: 40%;
       margin: 0 auto;
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin-bottom: 1rem; }
     .contacts .details h2 {
       margin-top: 20px; }
     .contacts .details .social {
@@ -854,18 +860,39 @@ svg {
       margin: 0 auto;
       width: 40%; }
       .contacts .details .social a {
-        color: #f7ffff; }
+        color: #58fcc3; }
+        .contacts .details .social a:hover {
+          color: #f7ffff; }
     .contacts .details img {
       width: 20%;
-      top: 11.5%;
+      top: 11%;
       right: 7%;
       position: absolute; }
 
 .resources {
-  height: 100vh;
-  background: white; }
+  height: 100%;
+  background: #051113;
+  z-index: 1;
+  margin-top: -4rem;
+  padding-top: 12rem;
+  padding-bottom: 8rem; }
   .resources .res-text {
-    width: 100%; }
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    color: #cb215b;
+    font-family: "Roboto Mono", monospace; }
+    .resources .res-text ul li {
+      display: block; }
+      .resources .res-text ul li a {
+        color: #f7ffff;
+        text-decoration: none;
+        line-height: 3rem;
+        padding: 1rem; }
+        .resources .res-text ul li a:hover {
+          cursor: pointer;
+          background: #f7ffff;
+          color: #123f44; }
 
 body {
   width: 100%;
