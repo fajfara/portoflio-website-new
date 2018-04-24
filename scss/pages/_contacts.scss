@@ -4,8 +4,26 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-family: 'Roboto Mono', monospace;
-    background-color: #092123;
-    background-image: url("../images/foggy-birds.png");
+
+    // background
+    background:#000;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    
+    background: linear-gradient(
+        to bottom,
+        #000,
+        #000 50%,
+        #222 50%,
+        #222
+    );
+    background-size: 100% 4px;
+
+
+    // end of background code
+
+
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
     padding-top: 7rem;
