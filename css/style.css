@@ -176,8 +176,9 @@ h1 {
 
 .neon2 h1 {
   font-size: 1.5em;
-  color: #228DFF;
-  font-family: 'Roboto Mono', monospace; }
+  color: #f7ffff;
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #cb215b, 0 0 17.5px #cb215b, 0 0 20px #cb215b, 0 0 25px #cb215b, 0 0 37.5px #cb215b; }
 
 .neon2 h1:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
@@ -241,6 +242,7 @@ p h1:hover {
   font-size: 1.5em;
   color: #f7ffff;
   font-family: 'Roboto Mono', monospace;
+  display: block;
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate; }
@@ -625,7 +627,7 @@ svg {
   background-image: url("../images/bg-landing-2.jpg");
   background-attachment: fixed;
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   z-index: 1001; }
 
@@ -709,7 +711,7 @@ svg {
   text-align: center;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
-  padding: 5rem 5rem 10rem 5rem; }
+  padding: 12rem 5rem 12rem 5rem; }
 
 /*& img {
         width: 100%;
@@ -833,10 +835,10 @@ svg {
   text-transform: uppercase;
   background: linear-gradient(to bottom, #000, #000 50%, #222 50%, #222);
   background-size: 100% 4px;
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 80%, 0 100%);
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   margin-top: -7%; }
   .contacts .details {
     max-width: 960px;
@@ -868,17 +870,17 @@ svg {
         .contacts .details .social a:hover {
           color: #f7ffff; }
     .contacts .details img {
-      width: 20%;
-      top: 11%;
-      right: 7%;
-      position: absolute; }
+      position: absolute;
+      width: 17%;
+      top: -2rem;
+      right: 7%; }
 
 .resources {
   height: 100%;
   background: #051113;
   z-index: 1;
-  margin-top: -4rem;
-  padding-top: 12rem;
+  margin-top: -10rem;
+  padding-top: 14rem;
   padding-bottom: 8rem; }
   .resources .res-text {
     width: 75%;
@@ -897,6 +899,9 @@ svg {
           cursor: pointer;
           background: #f7ffff;
           color: #123f44; }
+
+html {
+  font-size: 70.5%; }
 
 body {
   width: 100%;

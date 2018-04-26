@@ -24,10 +24,10 @@
     // end of background code
 
 
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 80%, 0 100%);
+    padding-top: 9rem;
+    padding-bottom: 9rem;
     margin-top: -7%;
 
     & .details {
@@ -73,10 +73,11 @@
         }
 
         & img {
-            width: 20%;
-            top: 11%;
-            right: 7%;
+            
             position: absolute;
+            width: 17%;
+            top: -2rem;
+            right: 7%;
         }
     }
 }
