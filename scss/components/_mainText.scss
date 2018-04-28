@@ -12,6 +12,12 @@ svg {
     height: 300px;
     margin: 0 auto;
 
+    @include respond(phone) {
+        margin-left: 10rem;
+    }
+
+    
+
     & text {
         color: $black;
         text-shadow: 0 1px 0 $black, 

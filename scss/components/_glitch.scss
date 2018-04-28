@@ -6,12 +6,15 @@
           transform: translateY(-50%);
   z-index: 1;
   font-family: futura, sans-serif;
-  font-size: 8em;
+  font-size: 6em;
   color: transparent;
   text-align: center;
   letter-spacing: .5em;
   transition: letter-spacing 2s ease;
   display: inline-block;
+  @include respond(phone) {
+    margin-left: 1.5rem;
+  } 
 }
 .focus .letter {
   transition: text-shadow 2s ease;

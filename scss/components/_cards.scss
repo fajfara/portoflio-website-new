@@ -16,10 +16,24 @@
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+        
 
-        & img {
-            width: 100%;
-            height: 100%;
+        &--front-1 {
+            background-image: url('../images/RQM-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &--front-2 {
+            background-image: url('../images/weather-app-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &--front-3 {
+            background-image: url('../images/wiki-view-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         &--back {
@@ -52,11 +66,143 @@
         }
     }
 
-    &:hover &__side--front {
+    &:hover &__side--front-1 {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--front-2 {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--front-3 {
         transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
     }
+
+    @include respond(tab-port) {
+        height: 22rem;
+        margin-bottom: 20rem;
+        &__side {
+            height: 22rem;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 75%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+            z-index: 100;
+    
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+    
+            &--back {
+                background-color: $black;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 100%;
+                z-index: 1;
+    
+                &-1 {
+                    &-content {
+                        margin: 0 auto;
+                        margin-top: 5rem;
+                        width: 75%;
+                        height: 50%;
+    
+    
+                        & .text {
+                            margin-top: 1rem;
+                            color: $main-font-color;
+                        }
+    
+                        & h1 {
+                            font-family: $main-title-font;
+                            
+                        }
+    
+                        & p {
+                            font-family: $content-font;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+    
+        &:hover &__side--back {
+            transform: rotateY(0);
+        }
+
+    }
+
+
+    @include respond(phone) {
+        position: relative;
+        width: 100%;
+        left: -5%;
+
+        &__side {
+            position: absolute;
+            height: 20rem;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+            
+
+            &--back {
+                margin-top: -2rem;
+                &-1 {
+                    &-content {
+                        margin: 0 auto;
+                        width: 75%;
+                        height: 75%;
+
+
+                        & .text {
+                            margin-top: 4rem;
+                            color: $main-font-color;
+                            font-size: 1rem;
+                        }
+
+                        & h1 {
+                            font-family: $main-title-font;
+                            
+                        }
+
+                        & p {
+                            font-family: $content-font;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        } 
+        
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+    
+        &:hover &__side--back {
+            transform: rotateY(0);
+        }
+    }
+
+        
 }

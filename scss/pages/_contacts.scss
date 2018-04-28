@@ -1,5 +1,6 @@
 .contacts {
     height: 100%;
+    width: 100%;
     color: $white;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -24,15 +25,23 @@
     // end of background code
 
 
-    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 80%, 0 100%);
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 20%, 100% 95%, 0 100%);
+        clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 100%);
+        padding-bottom: 0;
+        padding-top: 4rem;
+    }
+
+
     padding-top: 9rem;
     padding-bottom: 9rem;
     margin-top: -7%;
 
     & .details {
         max-width: 960px;
-        background: $black;
         margin: 0 auto;
         text-align: center;
         font-size: 1.5rem; 
@@ -76,8 +85,17 @@
             
             position: absolute;
             width: 17%;
-            top: -2rem;
+            top: 2rem;
             right: 7%;
+            transform: rotate(-5deg);
+
+            @include respond(tab-port) {
+                top: 2rem;
+            }
+
+            @include respond(phone) {
+                display: none;
+            }
         }
     }
 }
