@@ -59,6 +59,8 @@
                     }
 
                     & p {
+                        display: block;
+                        margin-bottom: 2rem;
                         font-family: $content-font;
                     }
                 }

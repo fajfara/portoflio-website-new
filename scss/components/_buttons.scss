@@ -153,6 +153,7 @@
     border-radius: .5em;
     border-color: $main-font-color;
     color: $main-font-color;
+    font-family: $content-font;
     background: {
         image: linear-gradient(to bottom, transparent 50%, $main-font-color 50%);
         position: 0% 0%;

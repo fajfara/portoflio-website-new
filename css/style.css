@@ -96,6 +96,8 @@
         .card__side--back-1-content h1 {
           font-family: "Roboto Mono", monospace; }
         .card__side--back-1-content p {
+          display: block;
+          margin-bottom: 2rem;
           font-family: "Open sans", sans-serif; }
   .card:hover .card__side--front-1 {
     transform: rotateY(-180deg); }
@@ -264,6 +266,7 @@
   border-radius: .5em;
   border-color: #cb215b;
   color: #cb215b;
+  font-family: "Open sans", sans-serif;
   background-image: linear-gradient(to bottom, transparent 50%, #cb215b 50%);
   background-position: 0% 0%;
   background-size: 210%;
