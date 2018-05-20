@@ -12,18 +12,18 @@
 <body>
     <!-- Navigation -->
     <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onclick="removeClasses()">
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#header" class="navigation__link"><span>01</span> Home</a></li>
-                <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span> About me</a></li>
-                <li class="navigation__item"><a href="#portfolio" class="navigation__link"><span>03</span> Portfolio</a></li>
-                <li class="navigation__item"><a href="#contacts" class="navigation__link"><span>04</span> Contacts</a></li>
-                <li class="navigation__item"><a href="#resources" class="navigation__link"><span>05</span> Resources</a></li>
+                <li class="navigation__item"><a href="#header" class="navigation__link" onclick="closeNav()"><span>01</span> Home</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link" onclick="closeNav()"><span>02</span> About me</a></li>
+                <li class="navigation__item"><a href="#portfolio" class="navigation__link" onclick="closeNav()"><span>03</span> Portfolio</a></li>
+                <li class="navigation__item"><a href="#contacts" class="navigation__link" onclick="closeNav()"><span>04</span> Contacts</a></li>
+                <li class="navigation__item"><a href="#resources" class="navigation__link" onclick="closeNav()"><span>05</span> Resources</a></li>
             </ul>
         </nav>
     </div>
@@ -225,6 +225,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="js/chart-draw.js"></script>
     <script src="js/main.js"></script>
 </body>

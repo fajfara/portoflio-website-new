@@ -731,22 +731,12 @@ svg {
   .navigation__icon::after {
     top: .4rem; }
 
-.navigation__button:hover .navigation__icon::before {
-  top: -.5rem; }
+.hide {
+  opacity: 0 !important;
+  width: 0 !important; }
 
-.navigation__button:hover .navigation__icon::after {
-  top: .5rem; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  top: 0;
-  transform: rotate(135deg); }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  top: 0;
-  transform: rotate(-135deg); }
+.scaleDown {
+  transform: scale(1) !important; }
 
 /* Styling the landing top animation*/
 /*
